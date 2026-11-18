@@ -1,1 +1,96 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GG./CORPUZ4LIFE</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090909;color:#fff;font-family:Arial,sans-serif}
+header{padding:24px;background:#171717;border-bottom:2px solid #e00000}
+.logo{font-size:25px;font-weight:bold;color:#ff3030}
+header p{color:#aaa}
+nav{display:flex;flex-wrap:wrap;gap:8px;padding:14px;background:#111}
+button{padding:12px 16px;background:#292929;color:white;border:1px solid #444;border-radius:7px;cursor:pointer}
+button:hover{background:#b00000}
+main{max-width:850px;margin:auto;padding:18px}
+h2{color:#ff3030}
+.card{background:#171717;border:1px solid #333;border-radius:12px;padding:18px;margin:14px 0}
+.status{color:#ffb52e;font-weight:bold}
+footer{text-align:center;color:#888;padding:25px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">GG./CORPUZ4LIFE</div>
+<p>PREMIUM PERSONAL DASHBOARD</p>
+</header>
+<nav>
+<button onclick="showPage('home')">Dashboard</button>
+<button onclick="showPage('messenger')">Messenger</button>
+<button onclick="showPage('facebook')">Facebook</button>
+<button onclick="showPage('settings')">Settings</button>
+<button onclick="showPage('about')">About</button>
+</nav>
+<main>
+<section id="home">
+<h2>Dashboard</h2>
+<div class="card">
+<h3>Welcome to GG./CORPUZ4LIFE!</h3>
+<p>Website Status: <span style="color:#00dd77">ONLINE</span></p>
+<p>Dashboard Version: 2.0</p>
+</div>
+<div class="card">
+<h3>Messenger Bot</h3>
+<p class="status">NOT CONNECTED</p>
+<p>Messenger integration is not connected yet.</p>
+</div>
+<div class="card">
+<h3>Facebook</h3>
+<p class="status">NOT CONNECTED</p>
+<p>Official authorization is required to connect.</p>
+</div>
+</section>
+<section id="messenger" hidden>
+<h2>Messenger</h2>
+<div class="card">
+<p class="status">NOT CONNECTED</p>
+<p>No Messenger account is connected.</p>
+</div>
+</section>
+<section id="facebook" hidden>
+<h2>Facebook</h2>
+<div class="card">
+<p class="status">NOT CONNECTED</p>
+<p>No Facebook account is connected.</p>
+</div>
+</section>
+<section id="settings" hidden>
+<h2>Settings</h2>
+<div class="card">
+<p>Theme: Dark Red</p>
+<p>Version: 2.0</p>
+</div>
+</section>
+<section id="about" hidden>
+<h2>About</h2>
+<div class="card">
+<div class="logo">GG./CORPUZ4LIFE</div>
+<p>Premium Personal Dashboard</p>
+<p>Version 2.0</p>
+</div>
+</section>
+</main>
+<footer>GG./CORPUZ4LIFE © 2026</footer>
+<script>
+function showPage(page){
+document.querySelectorAll("main section").forEach(function(section){
+section.hidden = true;
+});
+document.getElementById(page).hidden = false;
+}
+</script>
+</body>
+  </html>
+
