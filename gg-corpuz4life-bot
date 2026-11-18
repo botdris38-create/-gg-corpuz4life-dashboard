@@ -1,0 +1,24 @@
+GG-CORPUZ4LIFE/
+│
+├── index.html
+├── index.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+│
+├── scripts/
+│   └── patch-ws3-fca.js
+│
+├── test/
+│   └── automated tests
+│
+└── modules/
+    ├── banat-human.js
+    ├── banat-memory.js
+    ├── session-store.js
+    ├── reaction-audience.js
+    ├── slash-banat.js
+    ├── spam-mode.js
+    ├── proxy-config.js
+    ├── raid-mode.js
+    └── iba pang required modules
